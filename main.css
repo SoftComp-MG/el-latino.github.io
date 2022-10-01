@@ -534,7 +534,10 @@ li{
 .ads-services{
     width: 300px;
     height: 325px;
-    background: #CDCDCD;
+}
+.ads-services img{
+    width: 300px;
+    height: 325px;
 }
 /*testimonials*/
 .testimonials{
