@@ -1,0 +1,338 @@
+/* @media (max-width: 1000px){
+    nav{
+      padding: 0 40px 0 50px;
+    }
+}
+@media (max-width: 920px) {
+    nav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background: #111;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color: cyan;
+    }
+} */
+*{
+  /* border: 1px solid #007ACC; */
+}
+@media (max-width: 425px){
+  .head,
+  .logo .d-none{
+    display: none;
+  }
+  .header{
+    margin: auto;
+    max-width: 320px;
+  }
+  .main{
+    flex-direction: column;
+  }
+  .banner-flag-ctn{
+    width: 425px;
+  }
+  .banner-flag img{
+    margin: 0;
+    width: 425px;
+    height: 200px;
+  }
+  .overlay{
+    width: 425px;
+    height: 200px;
+  }
+  .text-banner{
+    width: 250px;  
+  }
+  .text-banner p{
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .text-banner span{
+    font-size: 1rem;
+  }
+  .banner-min{
+    display: none;
+  }
+  .line-title h2::before{
+    width: 10%;
+  }
+  .line-title h2::after{
+    width: 80%;
+    left: 32px;
+  }
+  .line-ul{
+    display: none;
+  }
+  .politica-ctn{
+    max-width: 425px;
+    flex-direction: column;
+  }
+  .politica-l img{
+    width: 425px;
+    height: 200px;
+  }
+  .politica-l p{
+    padding-top: 0px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .politica-1-text{
+    padding-top: 5px;
+    width: 425px;
+  }
+  .politica-r{
+    width: 425px;
+  }
+  .politica-news{
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  .politica-news img{
+    width: 425px;
+    height: 50px;
+  }
+  .politica-news-text{
+      left: 5px;
+  }
+  .estilo-vida{
+    max-width: 425px;
+    flex-direction: column;
+  }
+  .ev-principal .img-ev{
+      width: 425px;
+      height: 200px;
+  }
+  .overlay-ev{
+    width: 425px;
+    height: 200px;
+    clip-path: circle(141.4% at 0 0);
+  }
+  .ev-ctn{
+    width: 425px;
+    flex-direction: column;
+  }
+  .ev-ctn .ev-text{
+    padding: 10px;
+    width: 300px;
+  }
+  .ev-secundario img{
+    width: 425px;
+    height: 50px;
+  }
+  .title-top-news{
+    width: 100px;
+    height: 23px;
+  }
+  .title-top-news p{
+    line-height: 2;
+    font-size: 1.2rem;
+  }
+  .top-news{
+    width: 425px;
+    padding: 0;
+  }
+  .top-news span{
+    font-size: 1rem;
+  }
+  .finanzas-top img{
+    width: 425px;
+  }
+  .finanzas-top p{
+    font-size: var(--font-size-h3);
+    font-weight: 500;
+  }
+  .ad-inicio{
+    display: none;
+  }
+  .movies{
+    display: none;
+  }
+  .footer p{
+    font-size: 1rem;
+  }
+  /*Nosotros*/
+  .about{
+    max-width: 425px;
+  }
+  .about-l,
+  .about-r{
+    flex-direction: column;
+  }
+  .about-text{
+    width: 300px;
+    text-align: center;
+  }
+  .about-img img{
+    margin-top: 10px;
+    width: 320px;
+    margin-bottom: 20px;
+  }
+  .about-clipath img{
+    width: 425px;
+  }
+  /*Servicios*/
+  .services{
+    margin-top: 0px;
+    max-width: 425px;
+    flex-direction: column;
+  }
+  .services-ctn{
+    width: 300px;
+  }
+  .services-ctn h1{
+    text-align: center;
+  }
+  .services-ctn p{
+    text-align: center;
+  }
+  /*Testimonios*/
+  .testimonials{
+    max-width: 425px;
+  }
+  .testimonials-ctn{
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .testimonials-box{
+    left: 65px;
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+  .testimonials-blue{
+    position: relative;
+    left: 70px;
+    width: 310px;
+    height: 310px;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+  .testimonials-blue p{
+      padding: 20px 30px;
+  }
+  /*Contacto*/
+  .contact{
+    max-width: 425px;
+  }
+  .contact-ctn{
+      display: flex;
+      flex-direction: column;
+  }
+  .contact-l{
+      width: 425px;
+      padding: 10px;
+  }
+  .contact-r form{
+      padding: 10px;
+  }
+  .footer{
+      position: relative;
+      margin-top: 90px;
+  }
+}
+@media (max-width: 320px){
+  .header{
+    max-width: 320px;
+  }
+  .banner-flag-ctn{
+    width: 320px;
+  }
+  .banner-flag img{
+    width: 320px;
+  }
+  .overlay{
+    width: 320px;
+  }
+  .politica-ctn{
+    max-width: 320px;
+  }
+  .politica-l img{
+    width: 320px;
+  }
+  .politica-1-text{
+    width: 320px;
+  }
+  .politica-r{
+    width: 320px;
+  }
+  .politica-news img{
+    width: 320px;
+  }
+  .estilo-vida{
+    max-width: 320px;
+  }
+  .ev-principal .img-ev{
+      width: 320px;
+  }
+  .overlay-ev{
+    width: 320px;
+  }
+  .ev-ctn{
+    width: 320px;
+  }
+  .ev-secundario img{
+    width: 320px;
+  }
+  .top-news{
+    width: 320px;
+  }
+  .finanzas-top img{
+    width: 320px;
+  }
+  /*Nosotros*/
+  .about{
+    max-width: 320px;
+  }
+  .about-img img{
+    width: 320px;
+  }
+  .about-clipath img{
+    width: 320px;
+  }
+  /*Servicios*/
+  .services{
+    max-width: 320px;
+  }
+  /*Testimonios*/
+  .testimonials{
+    max-width: 320px;
+  }
+  /*Contacto*/
+  .contact{
+    max-width: 320px;
+  }
+  .contact-l{
+      width: 320px;
+  }
+}
